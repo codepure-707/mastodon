@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 ruby '>= 3.2.0', '< 3.5.0'
 
-gem 'propshaft'
+gem 'propshaft', '>= 1.2.0'
 gem 'puma', '~> 6.3'
 gem 'rack', '~> 2.2.7'
 gem 'rails', '~> 8.0'
@@ -55,7 +55,7 @@ gem 'hiredis', '~> 0.6'
 gem 'htmlentities', '~> 4.3'
 gem 'http', '~> 5.2.0'
 gem 'http_accept_language', '~> 2.1'
-gem 'httplog', '~> 1.7.0', require: false
+gem 'httplog', '~> 1.7.1', require: false
 gem 'i18n'
 gem 'idn-ruby', require: 'idn'
 gem 'inline_svg'
