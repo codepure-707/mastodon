@@ -111,7 +111,7 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     azure-blob (0.5.7)
       rexml
-    base64 (0.2.0)
+    base64 (0.3.0)
     bcp47_spec (0.2.1)
     bcrypt (3.1.20)
     benchmark (0.4.0)
@@ -428,7 +428,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2025.0408)
     mini_mime (1.1.5)
-    mini_portile2 (2.8.8)
+    mini_portile2 (2.8.9)
     minitest (5.25.5)
     msgpack (1.8.0)
     multi_json (1.15.0)
@@ -446,7 +446,7 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.4)
-    nokogiri (1.18.8)
+    nokogiri (1.18.9)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     oj (3.16.10)
@@ -456,14 +456,14 @@ GEM
       hashie (>= 3.4.6)
       rack (>= 2.2.3)
       rack-protection
-    omniauth-cas (3.0.1)
+    omniauth-cas (3.0.2)
       addressable (~> 2.8)
       nokogiri (~> 1.12)
       omniauth (~> 2.1)
     omniauth-rails_csrf_protection (1.0.2)
       actionpack (>= 4.2)
       omniauth (~> 2.0)
-    omniauth-saml (2.2.3)
+    omniauth-saml (2.2.4)
       omniauth (~> 2.1)
       ruby-saml (~> 1.18)
     omniauth_openid_connect (0.8.0)
@@ -627,7 +627,7 @@ GEM
       activesupport (>= 3.0.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (2.2.14)
+    rack (2.2.17)
     rack-attack (6.7.0)
       rack (>= 1.0, < 4)
     rack-cors (2.0.2)
@@ -782,7 +782,7 @@ GEM
       rubocop-rspec (~> 3.5)
     ruby-prof (1.7.1)
     ruby-progressbar (1.13.0)
-    ruby-saml (1.18.0)
+    ruby-saml (1.18.1)
       nokogiri (>= 1.13.10)
       rexml
     ruby-vips (2.2.3)
@@ -1003,9 +1003,9 @@ DEPENDENCIES
   nokogiri (~> 1.15)
   oj (~> 3.14)
   omniauth (~> 2.0)
-  omniauth-cas (~> 3.0.0.beta.1)
+  omniauth-cas (~> 3.0.2.0.0)
   omniauth-rails_csrf_protection (~> 1.0)
-  omniauth-saml (~> 2.0)
+  omniauth-saml (~> 2.2, >= 2.2.4)
   omniauth_openid_connect (~> 0.8.0)
   opentelemetry-api (~> 1.5.0)
   opentelemetry-exporter-otlp (~> 0.30.0)
@@ -1088,4 +1088,4 @@ RUBY VERSION
    ruby 3.4.1p0
 
 BUNDLED WITH
-   2.6.8
+   2.4.6
