@@ -42,7 +42,7 @@ gem 'omniauth', '~> 2.0'
 gem 'omniauth-cas', '~> 3.0.0.beta.1'
 gem 'omniauth_openid_connect', '~> 0.8.0'
 gem 'omniauth-rails_csrf_protection', '~> 1.0'
-gem 'omniauth-saml', '~> 2.0'
+gem 'omniauth-saml', '~> 2.2', '>= 2.2.4'
 
 gem 'color_diff', '~> 0.1'
 gem 'csv', '~> 3.2'
@@ -99,7 +99,7 @@ gem 'webpacker', '~> 5.4'
 gem 'webpush', github: 'mastodon/webpush', ref: '9631ac63045cfabddacc69fc06e919b4c13eb913'
 
 gem 'json-ld'
-gem 'json-ld-preloaded', '~> 3.2'
+gem 'json-ld-preloaded', '~> 3.3', '>= 3.3.2'
 gem 'rdf-normalize', '~> 0.5'
 
 gem 'prometheus_exporter', '~> 2.2', require: false
@@ -139,7 +139,7 @@ group :test do
 
   # Browser integration testing
   gem 'capybara', '~> 3.39'
-  gem 'selenium-webdriver'
+  gem 'selenium-webdriver', '>= 4.33.0'
 
   # Used to reset the database between system tests
   gem 'database_cleaner-active_record'
