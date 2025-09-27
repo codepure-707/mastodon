@@ -3,10 +3,10 @@
 source 'https://rubygems.org'
 ruby '>= 3.2.0', '< 3.5.0'
 
-gem 'propshaft'
+gem 'propshaft', '>= 1.2.0'
 gem 'puma', '~> 6.3'
-gem 'rack', '~> 2.2.7'
-gem 'rails', '~> 8.0'
+gem 'rack', '~> 2.2.18'
+gem 'rails', '~> 8.0', '>= 8.0.2.1'
 gem 'thor', '~> 1.2'
 
 gem 'dotenv'
@@ -39,10 +39,10 @@ end
 gem 'net-ldap', '~> 0.18'
 
 gem 'omniauth', '~> 2.0'
-gem 'omniauth-cas', '~> 3.0.0.beta.1'
+gem 'omniauth-cas', '~> 3.0.2.0.0'
 gem 'omniauth_openid_connect', '~> 0.8.0'
 gem 'omniauth-rails_csrf_protection', '~> 1.0'
-gem 'omniauth-saml', '~> 2.0'
+gem 'omniauth-saml', '~> 2.2', '>= 2.2.4'
 
 gem 'color_diff', '~> 0.1'
 gem 'csv', '~> 3.2'
@@ -55,14 +55,14 @@ gem 'hiredis', '~> 0.6'
 gem 'htmlentities', '~> 4.3'
 gem 'http', '~> 5.2.0'
 gem 'http_accept_language', '~> 2.1'
-gem 'httplog', '~> 1.7.0', require: false
+gem 'httplog', '~> 1.7.1', require: false
 gem 'i18n'
 gem 'idn-ruby', require: 'idn'
 gem 'inline_svg'
 gem 'irb', '~> 1.8'
 gem 'kaminari', '~> 1.2'
 gem 'link_header', '~> 0.0'
-gem 'linzer', '~> 0.6.1'
+gem 'linzer', '~> 0.7.0'
 gem 'mario-redis-lock', '~> 1.2', require: 'redis_lock'
 gem 'mime-types', '~> 3.6.0', require: 'mime/types/columnar'
 gem 'mutex_m'
@@ -74,19 +74,19 @@ gem 'premailer-rails'
 gem 'public_suffix', '~> 6.0'
 gem 'pundit', '~> 2.3'
 gem 'rack-attack', '~> 6.6'
-gem 'rack-cors', '~> 2.0', require: 'rack/cors'
-gem 'rails-i18n', '~> 8.0'
+gem 'rack-cors', '~> 3.0', '>= 3.0.0', require: 'rack/cors'
+gem 'rails-i18n', '~> 8.0', '>= 8.0.2'
 gem 'redcarpet', '~> 3.6'
 gem 'redis', '~> 4.5', require: ['redis', 'redis/connection/hiredis']
 gem 'redis-namespace', '~> 1.10'
 gem 'rqrcode', '~> 3.0'
 gem 'ruby-progressbar', '~> 1.13'
 gem 'sanitize', '~> 7.0'
-gem 'scenic', '~> 1.7'
-gem 'sidekiq', '~> 6.5'
+gem 'scenic', '~> 1.9', '>= 1.9.0'
+gem 'sidekiq', '~> 7.0', '>= 7.0.0'
 gem 'sidekiq-bulk', '~> 0.2.0'
-gem 'sidekiq-scheduler', '~> 5.0'
-gem 'sidekiq-unique-jobs', '~> 7.1'
+gem 'sidekiq-scheduler', '~> 6.0', '>= 6.0.0'
+gem 'sidekiq-unique-jobs', '~> 8.0', '>= 8.0.0'
 gem 'simple_form', '~> 5.2'
 gem 'simple-navigation', '~> 4.4'
 gem 'stoplight', '~> 4.1'
@@ -99,7 +99,7 @@ gem 'webpacker', '~> 5.4'
 gem 'webpush', github: 'mastodon/webpush', ref: '9631ac63045cfabddacc69fc06e919b4c13eb913'
 
 gem 'json-ld'
-gem 'json-ld-preloaded', '~> 3.2'
+gem 'json-ld-preloaded', '~> 3.3', '>= 3.3.2'
 gem 'rdf-normalize', '~> 0.5'
 
 gem 'prometheus_exporter', '~> 2.2', require: false
@@ -135,7 +135,7 @@ group :test do
   gem 'email_spec'
 
   # Extra RSpec extension methods and helpers for sidekiq
-  gem 'rspec-sidekiq', '~> 5.0'
+  gem 'rspec-sidekiq', '~> 5.2', '>= 5.2.0'
 
   # Browser integration testing
   gem 'capybara', '~> 3.39'
@@ -169,7 +169,7 @@ group :development do
   gem 'rubocop-capybara', require: false
   gem 'rubocop-i18n', require: false
   gem 'rubocop-performance', require: false
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.32.0', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-rspec_rails', require: false
 
@@ -212,7 +212,7 @@ group :development, :test do
   gem 'test-prof', require: false
 
   # RSpec runner for rails
-  gem 'rspec-rails', '~> 8.0'
+  gem 'rspec-rails', '~> 8.0', '>= 8.0.1'
 end
 
 group :production do
