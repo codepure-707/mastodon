@@ -10,7 +10,7 @@ gem 'rails', '~> 8.0'
 gem 'thor', '~> 1.2'
 
 gem 'dotenv'
-gem 'haml-rails', '~>2.0'
+gem 'haml-rails', '~> 3.0', '>= 3.0.0'
 gem 'pg', '~> 1.5'
 gem 'pghero'
 
@@ -38,7 +38,7 @@ end
 
 gem 'net-ldap', '~> 0.18'
 
-gem 'omniauth', '~> 2.0'
+gem 'omniauth', '~> 2.1', '>= 2.1.4'
 gem 'omniauth-cas', '~> 3.0.0.beta.1'
 gem 'omniauth_openid_connect', '~> 0.8.0'
 gem 'omniauth-rails_csrf_protection', '~> 1.0'
