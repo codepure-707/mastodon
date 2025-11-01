@@ -153,14 +153,14 @@ group :test do
   # Test harness fo rack components
   gem 'rack-test', '~> 2.1'
 
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '>= 7.0.1'
 
   # Coverage formatter for RSpec
   gem 'simplecov', '~> 0.22', require: false
   gem 'simplecov-lcov', '~> 0.8', require: false
 
   # Stub web requests for specs
-  gem 'webmock', '~> 3.18'
+  gem 'webmock', '~> 3.25', '>= 3.25.2'
 end
 
 group :development do
@@ -224,7 +224,7 @@ gem 'concurrent-ruby', require: false
 gem 'connection_pool', require: false
 gem 'xorcist', '~> 1.1'
 
-gem 'net-http', '~> 0.6.0'
+gem 'net-http', '~> 0.7.0'
 gem 'rubyzip', '~> 2.3'
 
 gem 'hcaptcha', '~> 7.1'
