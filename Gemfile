@@ -41,7 +41,7 @@ gem 'net-ldap', '~> 0.18'
 gem 'omniauth', '~> 2.0'
 gem 'omniauth-cas', '~> 3.0.0.beta.1'
 gem 'omniauth_openid_connect', '~> 0.8.0'
-gem 'omniauth-rails_csrf_protection', '~> 1.0'
+gem 'omniauth-rails_csrf_protection', '~> 2.0', '>= 2.0.0'
 gem 'omniauth-saml', '~> 2.0'
 
 gem 'color_diff', '~> 0.1'
@@ -186,7 +186,7 @@ group :development do
 
   # Security analysis CLI tools
   gem 'brakeman', '~> 7.0', require: false
-  gem 'bundler-audit', '~> 0.9', require: false
+  gem 'bundler-audit', '~> 0.9', '>= 0.9.3', require: false
 
   # Linter CLI for HAML files
   gem 'haml_lint', require: false
