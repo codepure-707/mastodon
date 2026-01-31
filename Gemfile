@@ -20,7 +20,7 @@ gem 'blurhash', '~> 0.1'
 gem 'fog-core', '<= 2.6.0'
 gem 'fog-openstack', '~> 1.0', require: false
 gem 'jd-paperclip-azure', '~> 3.0', require: false
-gem 'kt-paperclip', '~> 7.2'
+gem 'kt-paperclip', '~> 7.3', '>= 7.3.0'
 gem 'ruby-vips', '~> 2.2', require: false
 
 gem 'active_model_serializers', '~> 0.10'
@@ -88,7 +88,7 @@ gem 'sidekiq-bulk', '~> 0.2.0'
 gem 'sidekiq-scheduler', '~> 5.0'
 gem 'sidekiq-unique-jobs', '~> 7.1'
 gem 'simple_form', '~> 5.2'
-gem 'simple-navigation', '~> 4.4'
+gem 'simple-navigation', '~> 4.4', '>= 4.4.1'
 gem 'stoplight', '~> 4.1'
 gem 'strong_migrations'
 gem 'tty-prompt', '~> 0.23', require: false
